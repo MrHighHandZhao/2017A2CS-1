@@ -1,2 +1,2 @@
-My A2 Project/n
+My A2 Project\n
 We decide to create our own Thunder.
