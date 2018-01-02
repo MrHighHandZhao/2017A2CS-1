@@ -1,6 +1,7 @@
 import pygame
 from random import *
 
+#Add super bullet buff
 class Bullet_Supply(pygame.sprite.Sprite):
     def __init__(self, bg_size):
         pygame.sprite.Sprite.__init__(self)
@@ -24,7 +25,7 @@ class Bullet_Supply(pygame.sprite.Sprite):
         self.active = True
         self.rect.left, self.rect.bottom = \
                         randint(0, self.width - self.rect.width), -100
-
+#Add powerful super bomb supply
 class Bomb_Supply(pygame.sprite.Sprite):
     def __init__(self, bg_size):
         pygame.sprite.Sprite.__init__(self)
