@@ -1,5 +1,6 @@
 import pygame
 
+#Create user plane
 class MyPlane(pygame.sprite.Sprite):
     def __init__(self, bg_size):
         pygame.sprite.Sprite.__init__(self)
@@ -23,6 +24,7 @@ class MyPlane(pygame.sprite.Sprite):
         self.invincible = False
         self.mask = pygame.mask.from_surface(self.image1)
 
+    #Movements of user plane
     def moveUp(self):
         if self.rect.top > 0:
             self.rect.top -= self.speed
