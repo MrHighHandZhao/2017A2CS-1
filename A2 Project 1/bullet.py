@@ -1,5 +1,6 @@
 import pygame
 
+#Create bullet
 class Bullet1(pygame.sprite.Sprite):
     def __init__(self, position):
         pygame.sprite.Sprite.__init__(self)
@@ -10,7 +11,7 @@ class Bullet1(pygame.sprite.Sprite):
         self.speed = 12
         self.active = False
         self.mask = pygame.mask.from_surface(self.image)
-
+    #Movement of bullet
     def move(self):
         self.rect.top -= self.speed
         if self.rect.top < 0:
@@ -19,7 +20,7 @@ class Bullet1(pygame.sprite.Sprite):
     def reset(self, position):
         self.rect.left, self.rect.top = position
         self.active = True
-
+#Create super bullet
 class Bullet2(pygame.sprite.Sprite):
     def __init__(self, position):
         pygame.sprite.Sprite.__init__(self)
@@ -30,7 +31,7 @@ class Bullet2(pygame.sprite.Sprite):
         self.speed = 14
         self.active = False
         self.mask = pygame.mask.from_surface(self.image)
-
+    #Movement of bullet
     def move(self):
         self.rect.top -= self.speed
 
